@@ -1,12 +1,342 @@
-:root{
-    --dark-purple:#512051;
-    --light-purple:#EE69A4;
-    --purple-white:#F7F2F7;
-    --white:#fff;
+:root {
+    --dark-purple: #512051;
+    --light-purple: #ee69a4;
+    --purple-white:#f7f2f7;
+    --brown: #927B91;
+    --white: #fff;
+}
+
+body {
+    height: 100vh;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'League Spartan';
+    padding-left: 165px;
+    padding-right: 165px;
+    position: relative;
+}
+
+.desktop-img-top {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 584px;
+    height: 362px;
+}
+
+.desktop-img-bottom {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 
-body{
-    height: 100vh;
-    background: var(--white);
+.top {
+    display: flex;
+
+}
+
+.right {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.top-headert {
+    width: 445px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 48px;
+    letter-spacing: -2px;
+    color: var(--dark-purple);
+
+}
+
+.top-text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    letter-spacing: -0.633333px;
+    color: var(--brown);
+    width: 445px;
+    margin: 0px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    gap: 16px;
+    width: 540px;
+    margin-top: 50px;
+
+}
+
+
+.div1 {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: var(--purple-white);
+    border-radius: 8px;
+    width: 445px;
+    align-self: flex-start;
+    z-index: 1;
+}
+
+.div2 {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: var(--purple-white);
+    border-radius: 8px;
+    width: 445px;
+    align-self: center;
+    z-index: 1;
+
+}
+
+.div3 {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background: var(--purple-white);
+    border-radius: 8px;
+    width: 445px;
+    align-self: flex-end;
+    z-index: 1;
+
+}
+
+.top-left-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    /* identical to box height */
+    color: #512051;
+}
+
+.bottom {
+    display: flex;
+    margin-top: 71px;
+    gap: 30px;
+    height: 266px;
+}
+
+.bottom-card:nth-child(2) {
+    margin-top: 16px;
+}
+
+.bottom-card:nth-child(3) {
+    margin-top: 32px;
+}
+
+.bottom-card {
+    width: 350px;
+    height: 234px;
+    background: var(--dark-purple);
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.card-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 45px;
+}
+
+.card-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 32px;
+}
+
+.card-top-headers {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-left: 23px;
+    width: 110px;
+    height: 36px;
+}
+
+.card-top-header-h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 16px;
+    margin: 0;
+    margin-bottom: 4px;
+}
+
+.card-span-header {
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 16px;
+    margin: 0;
+    color: #EE69A4;
+}
+
+
+
+.card-text {
+    width: 286px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    margin: 31px 32px;
+    letter-spacing: -0.303571px;
+
+    color: #FFFFFF;
+
+}
+
+.mobile-img-bottom {
+    display: none;
+}
+
+.mobile-img-top {
+    display: none;
+
+}
+
+
+@media (max-width:375px) {
+
+    body {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 71px;
+        gap: 30px;
+        height: 266px;
+        width: 100%;
+    }
+
+    .desktop-img-bottom {
+        display: none;
+    }
+
+    .desktop-img-top {
+        display: none;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .top-headert {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 32px;
+        /* or 80% */
+        width: 327px;
+        text-align: center;
+        letter-spacing: -1.42857px;
+    }
+
+    .top-text {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: -0.633333px;
+        width: 327px;
+        margin-bottom: 36px;
+    }
+
+
+    .parent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+        gap: 16px;
+        width: 100%;
+        margin-top: 36px;
+        padding: 0 24px;
+    }
+
+
+    .div1 {
+        display: flex;
+        padding: 16px 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 15px;
+        background: var(--purple-white);
+        border-radius: 8px;
+        width: 445px;
+        align-self: center;
+        z-index: 1;
+    }
+
+    .div2 {
+        display: flex;
+        padding: 16px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background: var(--purple-white);
+        border-radius: 8px;
+        width: 445px;
+        align-self: center;
+        z-index: 1;
+        flex-direction: column;
+
+    }
+
+    .div3 {
+        display: flex;
+        padding: 16px 0;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background: var(--purple-white);
+        border-radius: 8px;
+        width: 445px;
+        align-self: center;
+        z-index: 1;
+        flex-direction: column;
+
+    }
 }
