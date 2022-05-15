@@ -1,0 +1,12 @@
+:root{
+    --dark-purple:#512051;
+    --light-purple:#EE69A4;
+    --purple-white:#F7F2F7;
+    --white:#fff;
+}
+
+
+body{
+    height: 100vh;
+    background: var(--white);
+}
